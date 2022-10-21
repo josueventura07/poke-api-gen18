@@ -1,0 +1,25 @@
+.selectbytype__container {
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+.selectbytype__list {
+    width: 100%;
+}
+
+@media (min-width:510px) {
+    
+    .selectbytype__container {
+        width: 100%;
+        max-width: 200px;
+        height: 40px;
+        margin: auto;
+        position: static;
+        
+    }
+}

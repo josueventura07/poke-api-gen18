@@ -1,0 +1,841 @@
+.pokeById__container{
+    width: 100%;
+    max-width: 1024px;
+    height: 1800px;
+    margin: auto;
+    
+}
+
+.card_pokeById-header {
+    
+    height: 150px;
+    
+}
+
+.header__logo {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 350px;
+    
+}
+
+
+.card_poke-ById {
+    width: 100%;
+    max-width: 900px;
+    height: 120px;
+    max-height: 500px;
+    margin: auto;
+    margin-top: 40px;
+    
+    background-color: rgb(73, 194, 103);
+    position: relative;
+    border: 10px solid transparent;
+    
+}
+
+.card_poke-img-ById {
+    width: 100%;
+    max-width: 200px;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 65px;
+    z-index: 3;
+}
+
+.card_poke-name-ById {
+    width: 100%;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: -320px;
+    height: 60px;
+}
+
+.card_poke-containerById {
+    width: 100%;
+    height: 500px;
+    max-height: 380px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 450px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.type {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card_pokeById_type-label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    color: gray;
+}
+
+.card_pokeById-types-ability-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    height: 150px;
+    top: -160px;
+}
+
+.card_pokeById-types-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.card_pokeById-type:nth-child(2)::before {
+    content: ' / ';
+}
+
+.ability {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.card_pokeById_ability-label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    color: gray;
+}
+
+.card_pokeById-ability-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.card_pokeById-ability:nth-child(2)::before {
+    content: '/ ';
+}
+
+.stats-move {
+    display: flex;
+    width: 100%;
+    height: 200px;
+   
+}
+
+.card_pokeById_stats-container {
+    width: 100%;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    
+}
+
+.card_pokeById-stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    gap: 5px;
+}
+
+.card_pokeById_stat-bar,
+.card_pokeById_stat-bar::after {
+    width: 100%;
+    max-width: 200px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    position: relative;
+    overflow: hidden;
+}
+
+.card_pokeById_stat-bar::after {
+    content: "";
+    position: absolute;
+    left: -200px;
+    background-color: rgba(109, 112, 117, 0.6);
+    filter: blur(0.9px);
+    transition: var(--transition);
+    animation: stat_bar-fill 2s ease-in-out forwards;
+    bottom: 1px;
+}
+
+.description__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: -240px;
+    height: 70px;
+}
+
+.desciption_minibox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.description__title {
+    font-weight: 400;
+    color: gray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.description-value {
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.movement_title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    margin-bottom: 5px;
+    filter: drop-shadow(-2px -1px 1px rgb(83, 131, 130))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.movements_container {
+    width: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    
+    top: 850px;
+}
+
+.movements_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    font-size: 14px;
+    color: black;
+    padding: 0.5rem;
+    overflow-y: scroll;
+}
+
+.move_list {
+    background-color: white;
+    padding: 0.15rem;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.move_list:hover {
+    background-color: rgba(139, 113, 113, 0.467);
+    filter: blur(0.1px);
+}
+
+
+/*--------Bar-Percents------*/
+
+.stat_bar-percent-10::after {
+    --bar-length: 10%;
+}
+
+.stat_bar-percent-20::after {
+    --bar-length: 20%;
+}
+
+.stat_bar-percent-30::after {
+    --bar-length: 30%;
+}
+
+.stat_bar-percent-40::after {
+    --bar-length: 40%;
+}
+
+.stat_bar-percent-50::after {
+    --bar-length: 50%;
+}
+
+.stat_bar-percent-60::after {
+    --bar-length: 60%;
+}
+
+.stat_bar-percent-70::after {
+    --bar-length: 70%;
+}
+
+.stat_bar-percent-80::after {
+    --bar-length: 80%;
+}
+
+.stat_bar-percent-90::after {
+    --bar-length: 90%;
+}
+
+.stat_bar-percent-100::after {
+    --bar-length: 100%;
+}
+
+@keyframes stat_bar-fill {
+    to {
+        transform: translateX(var(--bar-length));
+    }
+}
+
+/*----Backgroun-color-------*/
+
+.bg-pokeById-grass {
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%) padding-box,
+    linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgb(83, 131, 130))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-fire {
+    background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%) padding-box,
+                linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgba(249, 109, 111))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-water {
+    background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%) padding-box,
+                linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgba(19, 50, 88))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-bug {
+    background: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%) padding-box,
+                linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgba(98, 219, 96))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-normal {
+    background: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%) padding-box,
+                linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgba(115, 82, 89))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-poison {
+    background: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%) padding-box,
+                linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgba(91, 49, 132))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-electric {
+    background: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%) padding-box,
+                linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgba(12, 19, 149))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-ground {
+    background: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%) padding-box,
+                linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgba(101, 64, 8))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-fairy {
+    background: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%) padding-box,
+                linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgba(151, 27, 69))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-psychic {
+    background: linear-gradient(179.75deg, #E62D2D -19.96%, #D13E3E 43.67%, #F07F7F 138.4%) padding-box,
+                linear-gradient(179.75deg, #E62D2D -19.96%, #D13E3E 43.67%, #F07F7F 138.4%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgba(230, 45, 45))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-fighting {
+    background: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%) padding-box,
+                linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgba(150, 64, 42))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-rock {
+    background: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%) padding-box
+                linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgba(126, 126, 126))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-ghost {
+    background: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%) padding-box,
+                linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgba(50, 53, 105))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-dark {
+    background: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%) padding-box,
+                linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgb(83, 131, 130))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-flying {
+    background: linear-gradient(177.03deg, #9fee0b -11.97%, #e7d916 57.49%, #f7e57f 135.64%) padding-box,
+                linear-gradient(177.03deg, #9fee0b -11.97%, #e7d916 57.49%, #f7e57f 135.64%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgb(83, 131, 130))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-ice {
+    background: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%) padding-box,
+                linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgb(83, 131, 130))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-steel {
+    background: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%) padding-box,
+                linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgb(83, 131, 130))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.bg-pokeById-dragon {
+    background: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%) padding-box,
+                linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%) border-box;
+    border-radius: 10px;
+    filter: drop-shadow(-2px -2px 1px rgb(83, 131, 130))
+            drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+/*----Letter Color----*/
+
+.letter-pokeById-grass {
+    color: #416460;
+}
+
+.letter-pokeById-fire {
+    color: #E75C35;
+}
+
+.letter-pokeById-water {
+    color: rgba(20, 121, 251, 1);
+}
+
+.letter-pokeById-bug {
+    color: #4AB648;
+
+}
+
+.letter-pokeById-normal {
+    color: #735259;
+}
+
+.letter-pokeById-poison {
+    color: #5B3184;
+}
+
+.letter-pokeById-eletric {
+    color: #0C1395;
+}
+
+.letter-pokeById-ground {
+    color: #654008;
+}
+
+.letter-pokeById-fairy {
+    color: #971B45;
+}
+
+.letter-pokeById-psychic {
+    color: #E62D2D;
+}
+
+.letter-pokeById-fighting {
+    color: #96402A;
+}
+
+.letter-pokeById-rock {
+    color: #7E7E7E;
+}
+
+.letter-pokeById-ghost {
+    color: #323569;
+}
+
+.letter-pokeById-dark {
+    color: #030706;
+}
+
+.letter-pokeById-flying {
+    color: yellowgreen;
+}
+
+.letter-pokeById-ice {
+    color: #6FBEDF;
+}
+
+.letter-pokeById-steel {
+    color: #5E736C;
+}
+
+.letter-pokeById-dragon {
+    color: #478A93;
+}
+
+@media (min-width:450px) {
+
+    .pokeById__container{
+    width: 100%;
+    max-width: 1024px;
+    height: 800px;
+    margin: auto;
+    
+}
+
+    .card_poke-ById {
+        width: 100%;
+        max-width: 900px;
+        height: 500px;
+        max-height: 500px;
+        margin: auto;
+        margin-top: 40px;
+        
+        background-color: rgb(73, 194, 103);
+        position: relative;
+        border: 10px solid transparent;
+        
+    }
+    
+    .card_poke-img-ById {
+        width: 60%;
+        max-width: 200px;
+        position: absolute;
+        top: -90px;
+        left: 30%;
+        transform: translateX(-50%);
+        margin-bottom: 65px;
+        z-index: 3;
+    }
+    
+    .card_poke-name-ById {
+        margin-top: 0;
+    background-color: white;
+    border-radius: 0px;
+        position: static;
+        width: 100%;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: 15px;
+        position: static;
+        height: 50px;
+    }
+    
+    .card_poke-containerById {
+        width: 60%;
+        height: 58vh;
+        max-height: 380px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .type {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .card_pokeById_type-label {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-weight: 400;
+        color: gray;
+    }
+    
+    .card_pokeById-types-ability-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        flex-direction: row;
+        justify-content: space-around;
+        position: static;
+        border-radius: 0px;
+        height: 50px;
+    
+    }
+    
+    .card_pokeById-types-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        text-transform: capitalize;
+        font-weight: 700;
+    }
+    
+    .card_pokeById-type:nth-child(2)::before {
+        content: ' / ';
+    }
+    
+    .ability {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .card_pokeById_ability-label {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-weight: 400;
+        color: gray;
+    }
+    
+    .card_pokeById-ability-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        text-transform: capitalize;
+        font-weight: 700;
+    }
+    
+    .card_pokeById-ability:nth-child(2)::before {
+        content: '/ ';
+    }
+    
+    .stats-move {
+        display: flex;
+        width: 100%;
+        height: 200px;
+       
+    }
+    
+    .card_pokeById_stats-container {
+        width: 100%;
+        display: flex;
+        height: 200px;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        
+    }
+    
+    .card_pokeById-stat {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+        
+    }
+    
+    .stat {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        gap: 5px;
+    }
+    
+    .card_pokeById_stat-bar,
+    .card_pokeById_stat-bar::after {
+        width: 100%;
+        max-width: 200px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: gray;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .card_pokeById_stat-bar::after {
+        content: "";
+        position: absolute;
+        left: -200px;
+        background-color: rgba(109, 112, 117, 0.6);
+        filter: blur(0.9px);
+        transition: var(--transition);
+        animation: stat_bar-fill 2s ease-in-out forwards;
+        bottom: 1px;
+    }
+    
+    .description__container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 0px;
+        position: static;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .desciption_minibox {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .description__title {
+        font-weight: 400;
+        color: gray;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .description-value {
+        font-weight: 700;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .movement_title {
+        color: white;
+        margin-bottom: 5px;
+        filter: drop-shadow(-2px -1px 1px rgb(83, 131, 130))
+                drop-shadow(2px 2px 2px rgba(0,0,0,0.2))
+                drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+    }
+    
+    .movements_container {
+       
+        width: 30%;
+        max-height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+    
+    .movements_list {
+        
+        
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        overflow-y: scroll;
+        color: white;
+    }
+    
+    
+   .move_list{
+        border-radius: 0px;
+        background-color: transparent;
+        gap: 0px;
+        font-weight: 0;
+        padding: 0;
+   }
+    .move_list:hover {
+        background-color: rgba(139, 113, 113, 0.467);
+        filter: blur(0.1px);
+    }
+
+   
+    
+}

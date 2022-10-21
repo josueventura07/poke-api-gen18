@@ -1,0 +1,22 @@
+.inputsearch__container{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.inputsearch__input{
+    padding: 10px 20px;
+    box-shadow: -1px 1px 10px #0004;
+    font-size: 1.2rem;
+    height: 40px;
+}
+
+.inputsearch__btn{
+    min-width: 150px;
+    color: var(--color-white);
+    padding: 10px 20px;
+    background-color: var(--color-red);
+    box-shadow: -1px 1px 10px #0004;
+    cursor: pointer;
+    height: 40px;
+}
