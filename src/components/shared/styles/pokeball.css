@@ -16,7 +16,7 @@
     border-radius: 100%;
     overflow: hidden;
     position: absolute;
-    top: -50px;
+    top: -10px;
    transform: translateZ(-30px);
     animation-name: move;
     animation-duration: 1s;
