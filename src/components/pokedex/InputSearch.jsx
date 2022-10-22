@@ -8,7 +8,7 @@ const navigate = useNavigate()
 
     const submit = e => {
         e.preventDefault()
-        navigate(`/pokedex/${e.target.search.value.trim()}`)
+        navigate(`/pokedex/${e.target.search.value.trim().toLowerCase()}`)
     }
 
   return (
