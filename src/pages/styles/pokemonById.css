@@ -6,6 +6,40 @@
     
 }
 
+.pokeById_return {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgba(204, 204, 204, 40%);
+}
+
+.pokeById_return-icon {
+    height: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.pokeById_return-icon:hover {
+    transform: translateY(-1px);
+    transition: transform 0.5s ease;
+}
+
 .card_pokeById-header {
     
     height: 150px;

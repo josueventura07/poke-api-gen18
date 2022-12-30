@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import Pokemon404 from '../components/pokemonbyid/Pokemon404'
 import './styles/pokemonById.css'
 
@@ -32,6 +32,7 @@ const PokemonById = () => {
   return (
 
     <div className='pokeById__container'>
+      <Link className='pokeById_return' to='/pokedex'><div className='pokeById_return-icon'>&#60;</div>Return to Pokedex</Link>
       <div className='card_pokeById-header'>
         <img className='header__logo' src='./images/pokemonbyid/logopokemon.png' alt="logo" />
       </div>
