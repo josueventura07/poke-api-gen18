@@ -7,19 +7,23 @@
 }
 
 .pokeById_return {
-    width: 150px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     color: red;
-    font-size: 20px;
+    font-size: 16px;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 10px;
+    left: 10px;
     border-radius: 20px;
     padding: 5px;
     background-color: rgba(204, 204, 204, 40%);
+}
+
+.pokeById_return:hover {
+    background-color: transparent;
 }
 
 .pokeById_return-icon {

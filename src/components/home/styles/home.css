@@ -25,6 +25,7 @@
     font-size: 20px;
     color: blue;
     font-weight: 700;
+    text-align: center;
     -webkit-text-stroke: 0.6px black;
 }
 
@@ -70,9 +71,9 @@
 
 .pokedex_img2 {
     width: 100%;
-    max-width: 250px;
-    transform: translateZ(-300px);
-    
+    max-width: 150px;
+    transform: translateZ(-260px);
+    padding-right: 20px;
     
     filter: drop-shadow(5px 5px 3px rgba(53, 50, 50, 0.2))
     drop-shadow(5px 5px 5px rgba(53, 50, 50, 0.2))

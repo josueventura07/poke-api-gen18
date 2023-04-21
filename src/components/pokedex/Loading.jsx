@@ -3,7 +3,7 @@ import './styles/loading.css'
 
 const Loading = () => {
   return (
-    <div>
+    <div className='pokeball_body'>
       <div className='container'>
         <div className='pokeball'>
             <div className='middle_top'>

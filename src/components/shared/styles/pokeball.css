@@ -1,23 +1,23 @@
+
+
 .pokeball__container {
-    
-    margin-top: 30px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    position: relative;
-    perspective: 300px;
+    margin-top: 90px;
+    perspective: 500px;
 }
 
 .pokeball__pokeball {
     width: 100%;
-    max-width: 200px;
+    max-width: 220px;
     aspect-ratio: 1;
     border-radius: 100%;
     overflow: hidden;
-    position: absolute;
-    top: -10px;
-   transform: translateZ(-30px);
+    position: relative;
+    transform: translateZ(-30px);
     animation-name: move;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -96,19 +96,19 @@
 }
 
 .pokeball__floor {
-    width: 100%;
-    
-    position: absolute;
+    width: 200px;
+    height: 300px;
+    position: fixed;
     
     transform: rotateX(110deg);
-    
+    bottom: -200px;
     /* background-image: radial-gradient(#0007, #0000 15%); */
     z-index: -1;
     animation-name: moveshadow;
-   animation-duration: 1s;
-   animation-iteration-count: infinite;
-   animation-direction: alternate;
-   animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes moveshadow {
@@ -151,4 +151,21 @@
         }
     
 }
+ }
+
+ @media (min-width: 1400px) {
+    .pokeball__container {
+        perspective: 180px;
+    }
+    
+
+    .pokeball__container {
+        margin-top: 300px;
+        
+    }
+
+    .pokeball__floor {
+        bottom: -100px;
+        
+    }
  }
