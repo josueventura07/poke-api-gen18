@@ -120,6 +120,28 @@
     }
  }
 
+ @media screen and (min-width: 900px) and (max-width: 1400px) {
+    .pokeball__container {
+        margin-top: 0px;
+        
+    }
+
+    .pokeball__pokeball {
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    
+
+    .pokeball__floor {
+       
+        width: 100%;
+        background-color: rgb(241, 212, 162);
+        transform: rotateX(100deg);
+    }
+
+    
+         
+ }
 
  @media (min-width:450px) {
   

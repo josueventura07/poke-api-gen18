@@ -126,3 +126,27 @@
         background-image: radial-gradient(#0007, #0000 20%);
     }
  }
+
+ @media screen and (min-width: 900px) and (max-width: 1400px) {
+    .container {
+        width: 100%;
+       
+    }
+
+    .pokeball {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    
+
+    .floor {
+       
+        width: 70%;
+        bottom: -200px;
+        background-color: rgb(241, 212, 162);
+        
+    }
+
+    
+         
+ }
