@@ -6,6 +6,8 @@
     position: absolute;
     top: 40px;
     right: 0;
+    background-color: white;
+    
 }
 
 .selectbytype__list {
