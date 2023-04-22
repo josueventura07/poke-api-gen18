@@ -72,8 +72,8 @@
 
 .pokedex_img2 {
     width: 100%;
-    max-width: 150px;
-    transform: translateZ(-300px);
+    max-width: 100px;
+    transform: translateZ(-150px);
     padding-right: 20px;
     position: static;
     filter: drop-shadow(5px 5px 3px rgba(53, 50, 50, 0.2))
