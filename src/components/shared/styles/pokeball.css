@@ -8,6 +8,7 @@
     align-items: center;
     margin-top: 0px;
     perspective: 300px;
+    position: relative;
 }
 
 .pokeball__pokeball {
@@ -98,7 +99,7 @@
 .pokeball__floor {
     width: 200px;
     height: 300px;
-    position: fixed;
+    position: absolute;
     
     transform: rotateX(110deg);
     bottom: -200px;
