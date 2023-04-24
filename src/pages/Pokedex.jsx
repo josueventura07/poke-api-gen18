@@ -68,7 +68,7 @@ const Pokedex = () => {
         setPage = {setPage}
       />
     </aside>
-    <main>
+    <main className='over_card_container'>
       <div className='card_container'>
         {
         pokemons?.slice(initialPoke, finalPoke).map(pokemon => (

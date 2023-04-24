@@ -14,7 +14,7 @@ const Pokeball = () => {
             <div className='pokeball__middle_bottom'></div>
         </div>
         <div className='pokeball__floor'></div>
-      </div>
+    </div>
   )
 }
 

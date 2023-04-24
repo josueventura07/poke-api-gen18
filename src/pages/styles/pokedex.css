@@ -1,12 +1,33 @@
+.over_card_container {
+    width: 100%;
+    max-width: 1050px;
+    max-height: 500px;
+    margin:  auto;
+    height: 100%;
+    padding-bottom: 100px;
+    overflow-y: scroll;
+    
+}
+
+.over_card_container::-webkit-scrollbar {
+    background-color: rgba(187, 168, 134, 0.4);
+    border-radius: 10px;
+}
+
+.over_card_container::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
 .card_container {
     width: 100%;
     max-width: 1024px;
     margin:  15px auto auto auto;
-    height: 100%;
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    padding-bottom: 6rem;
+    
     padding-top: 2rem;
     background-color: white;
     border-radius: 10px;

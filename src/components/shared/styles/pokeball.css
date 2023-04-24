@@ -6,9 +6,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0px;
+    
     perspective: 300px;
     position: relative;
+    
 }
 
 .pokeball__pokeball {
@@ -97,11 +98,12 @@
 }
 
 .pokeball__floor {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 300px;
     position: absolute;
-    
-    transform: rotateX(110deg);
+    background-color: rgb(241, 212, 162);
+    transform: rotateX(116deg);
     bottom: -200px;
     /* background-image: radial-gradient(#0007, #0000 15%); */
     z-index: -1;
@@ -145,14 +147,14 @@
     }
 
     .pokeball__pokeball {
-        margin-top: 70px;
+        margin-top: 40px;
         margin-bottom: 30px;
     }
     
 
     .pokeball__floor {
-       
         width: 100%;
+        max-width: 1024px;
         background-color: rgb(241, 212, 162);
         transform: rotateX(100deg);
     }
@@ -198,5 +200,6 @@
         margin-top: 30px;
         
     }
+    
     
 }
