@@ -91,6 +91,15 @@
     padding-right: 10px;
 }
 
+@media (min-width: 1400px) {
+    .over_card_container {
+        max-height: 700px;
+        
+        
+    }
+    
+}
+
 @media (min-width: 900px) and (max-width: 1400px) {
     .pokedex__img {
         justify-content: flex-start;

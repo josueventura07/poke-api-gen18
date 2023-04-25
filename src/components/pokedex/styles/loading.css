@@ -128,6 +128,23 @@
     }
  }
 
+ @media (min-width: 1400px) {
+    .container {
+        padding-top: 500px;        
+    }
+
+    .pokeball {
+        max-width: 250px;
+        margin-bottom: 100px;
+    }
+
+    .floor {
+        max-width: 1024px;
+        bottom: -95px; 
+              
+    }
+ }
+
  @media screen and (min-width: 900px) and (max-width: 1400px) {
     .container {
         width: 100%;
@@ -137,6 +154,7 @@
     .pokeball {
         margin-top: 0px;
         margin-bottom: 10px;
+        max-width: 250px;
     }
     
 
@@ -144,7 +162,7 @@
        
         width: 100%;
         max-width: 1024px;
-        bottom: -250px;
+        bottom: -230px;
         background-color: rgb(241, 212, 162);
         
     }

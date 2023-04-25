@@ -17,6 +17,7 @@
     max-width: 220px;
     aspect-ratio: 1;
     border-radius: 100%;
+    margin-bottom: 0;
     overflow: hidden;
     position: relative;
     transform: translateZ(-30px);
@@ -126,16 +127,20 @@
  @media (min-width: 1400px) {
     .pokeball__container {
         perspective: 180px;
+        margin-top: 300px;
+       
+       
     }
     
-
-    .pokeball__container {
-        margin-top: 300px;
+    .pokeball__pokeball {
+        margin-bottom: 20px;
         
     }
 
     .pokeball__floor {
         bottom: -100px;
+        width: 100%;
+        max-width: 1024px;
         
     }
  }
