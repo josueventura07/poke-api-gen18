@@ -1,10 +1,11 @@
 .over_card_container {
     width: 100%;
     max-width: 1050px;
+    height: 100%;
     max-height: 500px;
     margin:  auto;
-    height: 100%;
-    padding-bottom: 100px;
+    margin-top: 10px;
+    padding-bottom: 85px;
     overflow-y: scroll;
     
 }
@@ -22,17 +23,16 @@
 .card_container {
     width: 100%;
     max-width: 1024px;
-    margin:  15px auto auto auto;
-    
+    margin:  2px auto 5px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    
-    padding-top: 2rem;
     background-color: white;
     border-radius: 10px;
+    padding-top: 2rem;
     padding-left: 10px;
     padding-right: 10px;
+    
     box-shadow: 0px 2px 0px 4px rgb(194, 179, 153);
     transform: translateZ(-100px);
     perspective: 600px;
@@ -93,14 +93,23 @@
 
 @media (min-width: 1400px) {
     .over_card_container {
-        max-height: 700px;
-        
+        max-height: 645px;
+        margin-top: 10px;
+        padding-bottom: 0;
+    }
+    
+    .card_container {
+        margin:  2px auto 5px auto;
         
     }
     
 }
 
 @media (min-width: 900px) and (max-width: 1400px) {
+    .over_card_container {
+        padding-bottom: 0;
+    }
+
     .pokedex__img {
         justify-content: flex-start;
         align-items: center;

@@ -16,6 +16,7 @@ const Home = () => {
         <FormHome className='pokedex_form' />
       </div>
         <img className='pokedex_img2' src='./images/personajes/personaje1.png' alt="img" />
+        <img className='pokedex_img3' src='./images/personajes/Pikachu.png' alt="img" />
     </div>
   )
 }

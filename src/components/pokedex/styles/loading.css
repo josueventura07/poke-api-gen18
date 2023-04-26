@@ -128,6 +128,20 @@
     }
  }
 
+ @media (min-height: 548px) {
+    .container {
+        padding-top: 260px;
+        
+        
+    }
+    
+    .floor {
+        transform: rotateX(116deg);
+               
+    }
+    
+}
+
  @media (min-width: 1400px) {
     .container {
         padding-top: 500px;        
@@ -140,7 +154,7 @@
 
     .floor {
         max-width: 1024px;
-        bottom: -95px; 
+        bottom: -110px; 
               
     }
  }

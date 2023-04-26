@@ -72,15 +72,47 @@
     
 }
 
-.pokedex_img2 {
+.pokedex_img2, .pokedex_img3 {
     width: 100%;
     max-width: 150px;
     transform: translateZ(-150px);
     padding-right: 20px;
-    position: static;
     filter: drop-shadow(5px 5px 3px rgba(53, 50, 50, 0.2))
     drop-shadow(5px 5px 5px rgba(53, 50, 50, 0.2))
     drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.2));
+    
+}
+
+.pokedex_img2 {
+    position: absolute;
+    top: 350px;
+    right: 10px;
+}
+
+.pokedex_img3 {
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    animation: pikachuMovement 0.75s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes pikachuMovement {
+    0% {
+        transform: translateY(4%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+
+    
+}
+
+@media (min-height: 548px) {
+    .pokedex_img2 {
+        max-width: 130px;
+        
+        
+    }   
     
 }
 
@@ -96,11 +128,17 @@
     .pokedex_img2 {
         max-width: 250px;
         transform: translateZ(0px);
-        position: absolute;
         right: 20px;
         top: 38%;
         
-    }   
+    }  
+    
+    .pokedex_img3 {
+        max-width: 200px;
+        top: 550px;
+        left: 450px;
+        
+    }
 }
 
 @media (min-width: 900px) and (max-width: 1400px) {
@@ -117,6 +155,12 @@
         position: absolute;
         right: 20px;
         top: 25%;
+    }
+    
+    .pokedex_img3 {
+        max-width: 200px;
+        left: 450px;
         
-    }   
+    }
 }
+

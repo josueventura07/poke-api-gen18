@@ -124,6 +124,15 @@
     }
  }
 
+ @media (min-height: 548px) {
+    .pokeball__floor {
+        max-width: 250px;
+        transform: rotateX(114deg);
+        
+    }
+    
+}
+
  @media (min-width: 1400px) {
     .pokeball__container {
         perspective: 180px;
@@ -133,7 +142,7 @@
     }
     
     .pokeball__pokeball {
-        margin-bottom: 20px;
+        margin-bottom: 150px;
         
     }
 
